@@ -9,7 +9,7 @@ public class HW6_P1_Asc {
         int[] array = new int[15];
         for (int i = 0; i < array.length; i++) {
             boolean signed = Math.random() < 0.5;
-            array[i] = signed ? (int) (Math.random() * 100) : (- (int) (Math.random() * 100));
+            array[i] = signed ? 0 - (int) (Math.random() * 100) : (int) (Math.random() * 100);
         }
 
         System.out.println(Arrays.toString(array));
